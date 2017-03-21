@@ -1,0 +1,1 @@
+<img src="https://travis-ci.org/thephpx/wptest.svg?branch=master" alt=""/>
