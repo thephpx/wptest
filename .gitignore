@@ -1,2 +1,6 @@
 phpunit.phar
 composer.phar
+vendor
+src
+.DS_Store
+composer.lock
