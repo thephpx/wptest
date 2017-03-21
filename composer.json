@@ -1,0 +1,15 @@
+{
+    "name": "faisalahemd/tests",
+    "description": "test",
+    "authors": [
+        {
+            "name": "faisal ahmed",
+            "email": "faisal@faisalbd.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
