@@ -1,8 +1,9 @@
-<phpunit src="bootstrap.php">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true">
   <testsuites>
-    <testsuite name="demo">
-      <file>test-first.php</file>
+    <testsuite name="simpleTest">
+      <file>tests-first.php</file>
     </testsuite>
   </testsuites>
 </phpunit>
-
