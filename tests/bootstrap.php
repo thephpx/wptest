@@ -28,7 +28,7 @@ require_once $_tests_dir . '/includes/functions.php';
 //tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 
 //auto load
-require dirname(dirname(__FILE__)) . 'vendor/autoload.php';
+require dirname(dirname(__FILE__)) . '/vendor/autoload.php';
 
 // Start up the WP testing environment.
 require $_tests_dir . '/includes/bootstrap.php';
