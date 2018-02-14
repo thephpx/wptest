@@ -1,13 +1,6 @@
 <?php
 
-if (!class_exists('App\Sampleplugin')) {
-    // Get a reference to our PSR-4 Autoloader function that we can use to add our
-    // Acme namespace
-    $autoloader = require_once('autoload.php');
-
-    // Use the autoload function to setup our class mapping
-    $autoloader('App\\', __DIR__ . '/lib/');
-}
+require dirname(__FILE__) . '/vendor/autoload.php';
 
 use App\Sampleplugin;
 
