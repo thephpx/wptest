@@ -21,9 +21,9 @@ class SampleTest extends WP_UnitTestCase {
 
 		$wptest = new Wptest();
 		$sample = new Demoplugin();
-		$sample->setSample($sample);
+		$wptest->setSample($sample);
 
-		$return = $sample->getSample();
+		$return = $wptest->getSample();
 
 		if($return instanceof Demoplugin){
 			$outcome = true;
