@@ -19,8 +19,18 @@ class SampleTest extends WP_UnitTestCase {
 		// Replace this with some actual testing code.
 		// $this->assertTrue( true );
 
+		$wptest = new Wptest();
 		$sample = new Sampleplugin();
-		$outcome = $sample->init();
-		$this->assertEquals('SamplePlugin',$outcome);
+		$sample->setSample($sample);
+
+		$return = $sample->getSample();
+
+		if($return instanceof Sampleplugin){
+			$outcome = true;
+		}else{
+			$outcome = false;
+		}
+
+		$this->assertTrue($outcome);
 	}
 }
