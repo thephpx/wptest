@@ -36,7 +36,6 @@ matrix:
       dist: precise
 
 before_script:
-  - composer update
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - |
     if [ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]; then
@@ -54,7 +53,8 @@ before_script:
       composer global require wp-coding-standards/wpcs
       phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
     fi
-
+  - composer update
+  - composer dump-autoload
 script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
