@@ -2,7 +2,7 @@
 
 require dirname(__FILE__) . '/vendor/autoload.php';
 
-use App\Sampleplugin;
+use App\Demoplugin;
 
 class Wptest{
 

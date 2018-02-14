@@ -5,7 +5,7 @@
  * @package Sample_Plugin
  */
 
-use App\Sampleplugin;
+use App\Demoplugin;
 
 /**
  * Sample test case.
@@ -20,12 +20,12 @@ class SampleTest extends WP_UnitTestCase {
 		// $this->assertTrue( true );
 
 		$wptest = new Wptest();
-		$sample = new Sampleplugin();
+		$sample = new Demoplugin();
 		$sample->setSample($sample);
 
 		$return = $sample->getSample();
 
-		if($return instanceof Sampleplugin){
+		if($return instanceof Demoplugin){
 			$outcome = true;
 		}else{
 			$outcome = false;
