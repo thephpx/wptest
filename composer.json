@@ -1,7 +1,7 @@
 {
     "name": "thephpx/wptest",
     "description": "Wordpress Test Plugin",
-    "type": "project",
+    "type": "wordpress-plugin",
     "license": "GPLv2",
     "authors": [
         {
