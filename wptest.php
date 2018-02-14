@@ -29,7 +29,3 @@ class Wptest{
 	}
 
 }
-
-$test = new Sampleplugin();
-
-var_dump($test);
